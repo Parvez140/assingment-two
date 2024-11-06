@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); 
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    background-color: #111111;
+    max-width: 1440px;
+    margin: 0;
+}
+  /* common css style */
+.common-width{
+    width: 85%;
+    margin: 0 auto;
+}
+.display-flex{
+    display: flex;
+}
+.text-center{
+    text-align: center;
+}
+.common-title{
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+}
+.common-text{
+    color: #ffffff80;
+    font-size: 14px;
+}
+.pd-top-bottom{
+    padding: 50px 0;
+}
+
+/*  */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}  
+.navbar__logo{
+    color: #E6533C;
+    font-size: 36px;
+    font-weight: bolder;
+    font-style: italic;
+}
+.navbar__menu a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 22px;
+}
+.left-div{
+    width: 50%;
+}
+.left-div h2{
+    font-size: 78px;
+    font-weight: 900;
+    line-height: 88px;
+    color: #FFFFFF;
+}
+.left-div p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff80;
+    margin-top: -20px;
+}
+.right-div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.btn-one{
+    padding: 16px 40px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #E6533C;
+    border: none;
+    color: #FFFFFF;
+}
+.btn-two{
+    padding: 16px 40px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+/* section one */
+main{
+    padding: 50px 0;
+}
+.section-one{
+    padding-bottom: 50px;
+}
+.section-one-title h2{
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+}
+.section-one-text p{
+    color: #ffffff80;
+    font-size: 14px;
+    /* margin-top: -50px; */
+}
+.section-one-card{
+    padding: 10px;
+    margin-top: 30px;
+}
+.section-one-card-img{
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+}
+.section-one-card-title{
+    color: #FFFFFF;
+    font-size: 18px;
+}
+.section-one-card-text{
+    color: #ffffff80;
+    font-size: 14px;
+}
+/* section two */
+.section-two{
+    background-color: #222222;
+    padding: 20px;
+    align-items: center;
+    border-radius: 15px;
+}
+.section-two-left{
+    width: 65%;
+    padding: 10px;
+}
+.section-two-title{
+    margin: 0;
+}
+.section-two-text{
+    width: 70%;
+}
+.section-two-right{
+    width: 35%;
+}
+.section-two-right-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding-top: 30px;
+}
+
+.grid-item {
+    position: relative;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.grid-item:nth-child(1) .overlay { background-color: rgba(0, 255, 255, 0.3); }
+.grid-item:nth-child(2) .overlay { background-color: rgba(255, 0, 0, 0.3); }
+.grid-item:nth-child(3) .overlay { background-color: rgba(0, 0, 0, 0.5); }
+.grid-item:nth-child(4) .overlay { background-color: rgba(0, 0, 0, 0.5); }
+.grid-item:nth-child(5) .overlay { background-color: rgba(0, 255, 0, 0.5); }
+.grid-item:nth-child(6) .overlay { background-color: rgba(0, 0, 255, 0.3); }
+
+/* BMI Calculator section-four */
+.section-four{
+    background-color: #222222;
+}
+.calculator-sec {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.calculator-area {
+    display: flex;
+    gap: 50px;
+}
+.bmi-chart, .bmi-form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+}
+.bmi-chart h2, .bmi-form h2 {
+    margin-top: 0;
+}
+.bmi-chart table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.bmi-chart th, .bmi-chart td {
+    padding: 10px;
+    border: 1px solid #555;
+    text-align: left;
+}
+.bmi-form form {
+    display: grid;
+    gap: 10px;
+}
+.bmi-form input, .bmi-form select {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #444;
+    color: #fff;
+}
+
+
+/* section five */
+.section-five-containers {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.section-five-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #222222;
+    border-radius: 10px;
+}
+.section-five-grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.section-five-grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+}
+.overlay h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+.overlay p {
+    margin: 5px 0 0;
+    font-size: 1em;
+}
+/* footer section */
+footer{
+    background-color: #222222;
+}
+.footer {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo {
+    color: #ff4d4d;
+    font-size: 28px;
+    font-weight: bold;
+}
+.footer-text {
+    margin-top: 10px;
+    max-width: 300px;
+    color: #ffffff80;
+}
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+.footer-section h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.footer-section a {
+    color: #ffffff80;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+.footer-section a:hover {
+    color: #ff4d4d;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff80;
+    border-top: 1px solid #3a3a3a;
+    padding-top: 10px;
+    font-size: 14px;
+}
